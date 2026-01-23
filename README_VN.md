@@ -6,7 +6,7 @@ Một Trung tâm Bảo mật chuyên nghiệp, phong cách **Neobrutalist "Acid 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3-blue)
 
-## ✨ Tính Năng Nổi Bật
+##  Tính Năng Nổi Bật
 
 - **Thiết Kế Neobrutalist**: Viền đậm, độ tương phản cao và thẩm mỹ "Acid Yellow" rực rỡ.
 - **3 Theme Cốt Lõi**: Sáng, Tối và theme Vàng chuyên dụng mặc định.
@@ -16,7 +16,7 @@ Một Trung tâm Bảo mật chuyên nghiệp, phong cách **Neobrutalist "Acid 
 - **Hiệu Ứng Nền Động**: Họa tiết chấm bi chuyển động, lớp phủ grain/nhiễu và các hình khối trôi nổi.
 - **Hỗ Trợ Đa Ngôn Ngữ**: Bản dịch đầy đủ cho **Tiếng Anh** và **Tiếng Việt**.
 
-## 🚀 Công Nghệ Sử Dụng
+##  Công Nghệ Sử Dụng
 
 - **Framework**: Next.js 15 (App Router)
 - **Styling**: Tailwind CSS
@@ -24,7 +24,7 @@ Một Trung tâm Bảo mật chuyên nghiệp, phong cách **Neobrutalist "Acid 
 - **Themes**: Next Themes
 - **Font**: Inter
 
-## 🛠️ Hướng Dẫn Cài Đặt
+##  Hướng Dẫn Cài Đặt
 
 1. **Clone project**:
    ```bash
@@ -46,14 +46,14 @@ Một Trung tâm Bảo mật chuyên nghiệp, phong cách **Neobrutalist "Acid 
    npm run build
    ```
 
-## 📄 Triết Lý Bảo Mật
+##  Triết Lý Bảo Mật
 
 Triết lý cốt lõi của chúng tôi rất đơn giản: **Quyền Riêng Tư là một Quyền cơ bản**.
 - Không thu thập dữ liệu cá nhân.
 - Xử lý nội bộ tất cả thông tin trên trình duyệt.
 - Minh bạch hoàn toàn thông qua mã nguồn mở.
 
-## 🤝 Liên Hệ
+## Liên Hệ
 
 Được thực hiện bởi **Zero Team**.  
 Email: [thientran01345@icloud.com](mailto:thientran01345@icloud.com)

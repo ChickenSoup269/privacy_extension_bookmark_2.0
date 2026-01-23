@@ -6,7 +6,7 @@ A professional, high-impact **Neobrutalist "Acid Minimal"** Privacy Center built
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3-blue)
 
-## ✨ Features
+## Features
 
 - **Neobrutalist Design**: Bold borders, high contrast, and "Acid Yellow" aesthetic.
 - **Three Core Themes**: Light, Dark, and a default specialized Yellow theme.
@@ -16,7 +16,7 @@ A professional, high-impact **Neobrutalist "Acid Minimal"** Privacy Center built
 - **Background Effects**: Drifting dot patterns, grain/noise overlays, and floating geometric shapes.
 - **Multi-language Support**: Fully localized in **English** and **Tiếng Việt**.
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
 - **Styling**: Tailwind CSS
@@ -46,14 +46,14 @@ A professional, high-impact **Neobrutalist "Acid Minimal"** Privacy Center built
    npm run build
    ```
 
-## 📄 Privacy Philosophy
+##  Privacy Philosophy
 
 Our core philosophy is simple: **Privacy is a Right**.
 - No personal data collection.
 - Local processing of all browser-based information.
 - Full transparency via open-source code.
 
-## 🤝 Contact
+## Contact
 
 Created by **Zero Team**.  
 Email: [thientran01345@icloud.com](mailto:thientran01345@icloud.com)
