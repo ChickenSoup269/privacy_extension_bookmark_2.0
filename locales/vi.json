@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "projects": "Dự Án",
+    "title": "Trung Tâm Bảo Mật"
+  },
+  "home": {
+    "hero_title": "TRUNG TÂM <span class=\"text-zinc-500\">BẢO MẬT</span>",
+    "hero_subtitle": "Chúng tôi cam kết bảo vệ dữ liệu của bạn. Khám phá triết lý quyền riêng tư của chúng tôi trên mọi hệ sinh thái dự án.",
+    "view_projects": "Xem Các Dự Án",
+    "philosophy_title": "TRIẾT LÝ CỦA CHÚNG TÔI",
+    "philosophy_text": "Quyền riêng tư không phải là một tính năng, đó là quyền cơ bản. Trong mọi dự án, từ tiện ích trình duyệt đến ứng dụng web, chúng tôi luôn tuân thủ nguyên tắc: <strong>Dữ liệu của bạn thuộc về bạn.</strong>",
+    "security_title": "BẢO MẬT",
+    "security_text": "Mã hóa đầu cuối và lưu trữ cục bộ là ưu tiên hàng đầu.",
+    "transparency_title": "MINH BẠCH",
+    "transparency_text": "Không thu thập dữ liệu ẩn, không bán thông tin người dùng."
+  },
+  "projects": {
+    "title": "DANH SÁCH DỰ ÁN",
+    "subtitle": "Mỗi công cụ là một lời hứa về sự an toàn.",
+    "privacy_policy": "Chính Sách Quyền Riêng Tư",
+    "bookmark_manager": {
+      "name": "Zero Bookmark Manager",
+      "desc": "Tiện ích Chrome mượt mà và trực quan để quản lý dấu trang với các tính năng tìm kiếm, sắp xếp, quản lý thư mục và xuất/nhập."
+    },
+    "coming_soon": {
+      "name": "Sắp Ra Mắt",
+      "desc": "Các dự án mới đang được phát triển với cùng triết lý bảo mật hàng đầu."
+    }
+  },
+  "privacy": {
+    "back": "Quay lại dự án",
+    "title": "Chính Sách <span class=\"text-zinc-500\">Quyền Riêng Tư</span>",
+    "access_title": "Quyền Truy Cập",
+    "internal_data": "Xử Lý Nội Bộ",
+    "internal_desc": "Mọi thao tác dấu trang được thực hiện nội bộ trên trình duyệt. Không thu thập dữ liệu cá nhân.",
+    "storage": "Lưu Trữ",
+    "storage_desc": "Dùng để lưu các tùy chỉnh người dùng (theme, font...) cục bộ.",
+    "bookmarks_desc": "Chỉ được dùng để hiển thị, tổ chức, tìm kiếm và chỉnh sửa dấu trang cục bộ.",
+    "source_title": "Mã Nguồn",
+    "source_desc": "Tiện ích này là mã nguồn mở. Bạn có thể xem mã và các bản phát hành trên GitHub.",
+    "issues_title": "Lỗi Đã Biết",
+    "issues_desc": "Một số thành phần UI có thể không làm mới sau khi di chuyển. Khắc phục: Nhấn F5 để tải lại trang.",
+    "contact": "Liên Hệ",
+    "contact_desc": "Nếu bạn có bất kỳ câu hỏi hoặc lo ngại nào, vui lòng liên hệ tại:",
+    "rights": "Bảo lưu mọi quyền."
+  },
+  "features": {
+    "title": "Tính Năng Chính",
+    "item1": "Tìm kiếm & Sắp xếp (Ngày, Lượt truy cập, Thẻ)",
+    "item2": "Quản lý trùng lặp & Kiểm tra liên kết",
+    "item3": "Xuất/Nhập JSON, HTML, CSV",
+    "item4": "Tùy chỉnh Font & Nerd Fonts",
+    "item5": "Tạo mã QR & Chatbot (Beta)",
+    "item6": "Gắn thẻ nâng cao & Ghim dấu trang"
+  }
+}

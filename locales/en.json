@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "title": "Privacy Center"
+  },
+  "home": {
+    "hero_title": "PRIVACY <span class=\"text-zinc-500\">CENTER</span>",
+    "hero_subtitle": "We are committed to protecting your data. Explore our privacy philosophies across all project ecosystems.",
+    "view_projects": "View Projects",
+    "philosophy_title": "OUR PHILOSOPHY",
+    "philosophy_text": "Privacy is not a feature, it's a fundamental right. In every project, from browser extensions to web apps, we always adhere to the principle: <strong>Your data belongs to you.</strong>",
+    "security_title": "SECURITY",
+    "security_text": "End-to-end encryption and local storage are top priorities.",
+    "transparency_title": "TRANSPARENCY",
+    "transparency_text": "No hidden data collection, no selling of user information."
+  },
+  "projects": {
+    "title": "PROJECT LIST",
+    "subtitle": "Every tool is a promise of safety.",
+    "privacy_policy": "Privacy Policy",
+    "bookmark_manager": {
+      "name": "Zero Bookmark Manager",
+      "desc": "A sleek and intuitive Chrome extension to manage bookmarks with search, sort, folder management, and export/import features."
+    },
+    "coming_soon": {
+      "name": "Coming Soon",
+      "desc": "New projects are being developed with the same privacy-first philosophy."
+    }
+  },
+  "privacy": {
+    "back": "Back to Projects",
+    "title": "Privacy <span class=\"text-zinc-500\">Policy</span>",
+    "access_title": "Access & Permissions",
+    "internal_data": "Local Processing",
+    "internal_desc": "All bookmark operations are performed locally in your browser. No personal data is collected.",
+    "storage": "Storage",
+    "storage_desc": "Used to save user preferences (themes, fonts, etc.) locally.",
+    "bookmarks_desc": "Used only to display, organize, search, and edit bookmarks locally.",
+    "source_title": "Source Code",
+    "source_desc": "The extension is open-source. You can review the code and releases on GitHub.",
+    "issues_title": "Known Issues",
+    "issues_desc": "Minor UI refresh issues after moving items. Fix: Refresh page (F5).",
+    "contact": "Contact",
+    "contact_desc": "If you have any questions or concerns, please contact at:",
+    "rights": "All Rights Reserved."
+  },
+  "features": {
+    "title": "Key Features",
+    "item1": "Search & Sort (Date, Hits, Tags)",
+    "item2": "Duplicate Management & Health Check",
+    "item3": "JSON/HTML/CSV Export & Import",
+    "item4": "Custom Fonts & Nerd Fonts",
+    "item5": "QR Code Generator & Beta Chatbot",
+    "item6": "Advanced Tagging & Pinning"
+  }
+}

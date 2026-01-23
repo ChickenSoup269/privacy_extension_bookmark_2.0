@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 9 9 11;
+    --primary: 0 0 0;
+    --secondary: 244 244 245;
+    --accent: 39 39 42;
+  }
+
+  .dark {
+    --background: 9 9 11;
+    --foreground: 250 250 250;
+    --primary: 255 255 255;
+    --secondary: 24 24 27;
+    --accent: 212 212 216;
+  }
+
+  .yellow {
+    --background: 253 224 71; /* Yellow-300 */
+    --foreground: 12 10 9;    /* Stone-950 */
+    --primary: 0 0 0;
+    --secondary: 254 240 138; /* Yellow-200 */
+    --accent: 161 98 7;      /* Yellow-700 */
+  }
+
+  * {
+    @apply border-zinc-200 dark:border-zinc-800;
+  }
+
+  .yellow * {
+    @apply border-black/20;
+  }
+
+  body {
+    @apply bg-white dark:bg-zinc-950 text-zinc-950 dark:text-zinc-50 transition-colors duration-500 font-sans antialiased;
+    background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.05) 1px, transparent 0);
+    background-size: 40px 40px;
+    animation: bg-drift 60s linear infinite;
+  }
+
+  .yellow body {
+    @apply bg-yellow-300 text-stone-950;
+    background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.1) 1px, transparent 0);
+  }
+
+  .dark body {
+    background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+  }
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-black tracking-tight uppercase italic;
+  }
+}
+
+@layer utilities {
+  .animate-drift-slow {
+    animation: drift-slow 40s linear infinite;
+  }
+  .animate-drift-reverse {
+    animation: drift-reverse 50s linear infinite;
+  }
+}
+
+@layer components {
+  .premium-card {
+    @apply bg-white dark:bg-zinc-900 border-2 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] transition-all duration-300;
+  }
+
+  .yellow .premium-card {
+    @apply bg-yellow-50 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .glass-header {
+    @apply bg-white/80 dark:bg-black/80 backdrop-blur-md border-b-2 border-black dark:border-white sticky top-0 z-50;
+  }
+  
+  .yellow .glass-header {
+    @apply bg-yellow-300/80 border-black;
+  }
+
+  .yellow .bg-black {
+    @apply bg-zinc-950 text-yellow-300;
+  }
+
+  .yellow .bg-black a {
+    @apply text-yellow-300 border-yellow-300;
+  }
+
+  .nav-link {
+    @apply text-xs font-black uppercase tracking-[0.2em] relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-black dark:after:bg-white hover:after:w-full after:transition-all after:duration-300;
+  }
+}
+
+@keyframes bg-drift {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 1000px; }
+}
+
+@keyframes drift-slow {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(100px, 50px) rotate(180deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes drift-reverse {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-80px, -40px) rotate(-180deg); }
+  100% { transform: translate(0, 0) rotate(-360deg); }
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-reveal {
+  opacity: 0;
+  animation: reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scroll Animation */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
