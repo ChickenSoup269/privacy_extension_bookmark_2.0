@@ -30,13 +30,13 @@ export function ChatbotUI() {
     setTimeout(() => {
       let botResponse = "";
       if (option.action === "zero") {
-        botResponse = language === "vi" 
-          ? "Zero Bookmark Manager là dự án trọng tâm của chúng tôi, cam kết 100% không thu thập dữ liệu và xử lý cục bộ."
-          : "Zero Bookmark Manager is our flagship project, committing 100% to zero data collection and local processing.";
+          botResponse = language === "vi" 
+          ? "Pracy Bookmark là dự án trọng tâm của chúng tôi, cam kết 100% không thu thập dữ liệu và xử lý cục bộ."
+          : "Pracy Bookmark is our flagship project, committing 100% to zero data collection and local processing.";
       } else if (option.action === "all") {
         botResponse = language === "vi"
-          ? "Hiện tại chúng tôi có Zero Bookmark Manager và các dự án khác đang phát triển. Tất cả đều tuân thủ triết lý bảo mật nghiêm ngặt."
-          : "Currently we have Zero Bookmark Manager and other projects in development. All follow strict privacy philosophies.";
+          ? "Hiện tại chúng tôi có Pracy Bookmark và các dự án khác đang phát triển. Tất cả đều tuân thủ triết lý bảo mật nghiêm ngặt."
+          : "Currently we have Pracy Bookmark and other projects in development. All follow strict privacy philosophies.";
       }
       setMessages((prev) => [...prev, { role: "bot", text: botResponse }]);
     }, 600);
@@ -53,14 +53,14 @@ export function ChatbotUI() {
       let botResponse = "";
       const lower = userMessage.toLowerCase();
 
-      if (lower.includes("zero") || lower.includes("bookmark")) {
+      if (lower.includes("pracy") || lower.includes("bookmark")) {
         botResponse = language === "vi" 
-          ? "Zero Bookmark Manager xử lý mọi dữ liệu cục bộ trên trình duyệt của bạn. Chúng tôi không bao giờ thu thập hay chia sẻ dữ liệu dấu trang của bạn."
-          : "Zero Bookmark Manager processes all data locally in your browser. We never collect or share your bookmark data.";
+          ? "Pracy Bookmark xử lý mọi dữ liệu cục bộ trên trình duyệt của bạn. Chúng tôi không bao giờ thu thập hay chia sẻ dữ liệu dấu trang của bạn."
+          : "Pracy Bookmark processes all data locally in your browser. We never collect or share your bookmark data.";
       } else if (lower.includes("privacy") || lower.includes("bảo mật")) {
         botResponse = language === "vi"
-          ? "Tại Privacy Center, chúng tôi cam kết bảo mật tuyệt đối. Bạn muốn biết thêm về chính sách của Zero Bookmark Manager không?"
-          : "At Privacy Center, we are committed to absolute security. Would you like to know more about Zero Bookmark Manager's policy?";
+          ? "Tại Privacy Center, chúng tôi cam kết bảo mật tuyệt đối. Bạn muốn biết thêm về chính sách của Pracy Bookmark không?"
+          : "At Privacy Center, we are committed to absolute security. Would you like to know more about Pracy Bookmark's policy?";
       } else {
         botResponse = language === "vi"
           ? "Xin lỗi, tôi chỉ có thể cung cấp thông tin về quyền riêng tư của các dự án trong hệ sinh thái này. Hãy thử chọn một dự án bên dưới!"
@@ -79,7 +79,7 @@ export function ChatbotUI() {
           ? "Chào bạn! Tôi là trợ lý bảo mật. Bạn muốn tìm hiểu chính sách của dự án nào?" 
           : "Hello! I am your privacy assistant. Which project's policy would you like to explore?",
         options: [
-          { label: language === "vi" ? "Zero Bookmark Manager" : "Zero Bookmark Manager", action: "zero" },
+          { label: language === "vi" ? "Pracy Bookmark" : "Pracy Bookmark", action: "zero" },
           { label: language === "vi" ? "Tất cả dự án" : "All Projects", action: "all" }
         ]
       }]);

@@ -1,6 +1,6 @@
-# <img src="app/icon.png" alt="Icon" width="50" height="50"/> Privacy Center - Bookmark Manager Ecosystem
+# <img src="app/icon.png" alt="Icon" width="50" height="50"/> Privacy Center - Pracy Bookmark Ecosystem
 
-A professional, high-impact Neobrutalist "Acid Minimal" Privacy Center built with Next.js 15. This hub hosts privacy policies for our browser extensions and web tools, starting with the Zero Bookmark Manager.
+A professional, high-impact Neobrutalist "Acid Minimal" Privacy Center built with Next.js 15. This hub hosts privacy policies for our browser extensions and web tools, starting with Pracy Bookmark.
 
 ## Project Specifications
 
@@ -35,7 +35,7 @@ A professional, high-impact Neobrutalist "Acid Minimal" Privacy Center built wit
 
 | Step | Action | Command |
 | --- | --- | --- |
-| 1 | Clone the Repository | `git clone https://github.com/ChickenSoup269/Zero-Bookmark-Manager.git` |
+| 1 | Clone the Repository | `git clone https://github.com/ChickenSoup269/Pracy-Bookmark.git` |
 | 2 | Install Dependencies | `npm install` |
 | 3 | Start Development | `npm run dev` |
 | 4 | Build for Production | `npm run build` |

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
 import { LanguageToggle } from "./LanguageToggle";
+import { FontToggle } from "./FontToggle";
 import { Shield } from "lucide-react";
 import { useLanguage } from "./LanguageProvider";
 
@@ -34,6 +35,7 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-6">
+            <FontToggle />
             <LanguageToggle />
             <ThemeToggle />
           </div>

@@ -1,6 +1,6 @@
-# Trung Tâm Bảo Mật - Hệ Sinh Thái Zero Bookmark Manager
+# Trung Tâm Bảo Mật - Hệ Sinh Thái Pracy Bookmark
 
-Một Trung tâm Bảo mật chuyên nghiệp, phong cách Neobrutalist "Acid Minimal" được xây dựng bằng Next.js 15. Đây là nơi lưu trữ các chính sách quyền riêng tư cho các tiện ích trình duyệt và công cụ web của chúng tôi, bắt đầu với Zero Bookmark Manager.
+Một Trung tâm Bảo mật chuyên nghiệp, phong cách Neobrutalist "Acid Minimal" được xây dựng bằng Next.js 15. Đây là nơi lưu trữ các chính sách quyền riêng tư cho các tiện ích trình duyệt và công cụ web của chúng tôi, bắt đầu với Pracy Bookmark.
 
 ## Thông Số Dự Án
 
@@ -35,7 +35,7 @@ Một Trung tâm Bảo mật chuyên nghiệp, phong cách Neobrutalist "Acid Mi
 
 | Bước | Hành Động | Câu Lệnh |
 | --- | --- | --- |
-| 1 | Clone dự án | `git clone https://github.com/ChickenSoup269/Zero-Bookmark-Manager.git` |
+| 1 | Clone dự án | `git clone https://github.com/ChickenSoup269/Pracy-Bookmark.git` |
 | 2 | Cài đặt thư viện | `npm install` |
 | 3 | Chạy phát triển | `npm run dev` |
 | 4 | Build sản phẩm | `npm run build` |

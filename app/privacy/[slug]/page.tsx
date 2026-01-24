@@ -42,7 +42,7 @@ export default function PrivacyDetail() {
           />
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
             <div className="px-6 py-2 border-2 border-black dark:border-white font-black uppercase text-xl italic bg-zinc-100 dark:bg-zinc-800">
-              {isZero ? "Zero Bookmark Manager" : "Project Privacy"}
+              {isZero ? "Pracy Bookmark" : "Project Privacy"}
             </div>
             <button 
               onClick={() => setShowSummary(!showSummary)}
@@ -96,7 +96,7 @@ export default function PrivacyDetail() {
                   <div className="w-12 h-12 bg-black dark:bg-white text-white dark:text-black flex items-center justify-center border-2 border-black dark:border-white font-black text-xl italic">
                     01
                   </div>
-                  <h2 className="text-3xl font-black uppercase italic tracking-tight">{t("privacy.access_title")}</h2>
+                  <h2 className="text-3xl font-black uppercase italic tracking-tight">{t("privacy.permission_title")}</h2>
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-10">
@@ -159,7 +159,7 @@ export default function PrivacyDetail() {
         </main>
 
         <footer className="text-center py-20 border-t-2 border-black dark:border-white opacity-40 text-[10px] font-black uppercase tracking-[0.5em] reveal-on-scroll">
-          &copy; {year} PRIVACY CENTER. {t("privacy.rights")}
+          &copy; {year} PRACY BOOKMARK. {t("privacy.rights")}
         </footer>
       </div>
     </div>

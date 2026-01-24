@@ -18,7 +18,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const dictionaries = { en, vi };
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>("vi");
+  const [language, setLanguageState] = useState<Language>("en");
 
   useEffect(() => {
     const savedLang = localStorage.getItem("language") as Language;

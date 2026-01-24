@@ -20,7 +20,7 @@
     "subtitle": "Mỗi công cụ là một lời hứa về sự an toàn.",
     "privacy_policy": "Chính Sách Quyền Riêng Tư",
     "bookmark_manager": {
-      "name": "Zero Bookmark Manager",
+      "name": "Pracy Bookmark",
       "desc": "Tiện ích Chrome mượt mà và trực quan để quản lý dấu trang với các tính năng tìm kiếm, sắp xếp, quản lý thư mục và xuất/nhập."
     },
     "coming_soon": {
@@ -31,12 +31,17 @@
   "privacy": {
     "back": "Quay lại dự án",
     "title": "Chính Sách <span class=\"text-zinc-500\">Quyền Riêng Tư</span>",
-    "access_title": "Quyền Truy Cập",
+    "permission_title": "Quyền Truy Cập",
+    "bookmarks_title": "Dấu Trang",
+    "storage_title": "Lưu Trữ Cục Bộ",
     "internal_data": "Xử Lý Nội Bộ",
     "internal_desc": "Mọi thao tác dấu trang được thực hiện nội bộ trên trình duyệt. Không thu thập dữ liệu cá nhân.",
     "storage": "Lưu Trữ",
     "storage_desc": "Dùng để lưu các tùy chỉnh người dùng (theme, font...) cục bộ.",
     "bookmarks_desc": "Chỉ được dùng để hiển thị, tổ chức, tìm kiếm và chỉnh sửa dấu trang cục bộ.",
+    "usage_title": "Sử Dụng Dữ Liệu",
+    "usage_desc": "Chúng tôi không bán, trao đổi hoặc chuyển nhượng thông tin của bạn cho bên thứ ba. Tất cả dữ liệu nằm trong hệ sinh thái trình duyệt của bạn.",
+
     "source_title": "Mã Nguồn",
     "source_desc": "Tiện ích này là mã nguồn mở. Bạn có thể xem mã và các bản phát hành trên GitHub.",
     "issues_title": "Lỗi Đã Biết",

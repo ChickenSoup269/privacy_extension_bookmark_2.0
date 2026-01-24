@@ -20,7 +20,7 @@
     "subtitle": "Every tool is a promise of safety.",
     "privacy_policy": "Privacy Policy",
     "bookmark_manager": {
-      "name": "Zero Bookmark Manager",
+      "name": "Pracy Bookmark",
       "desc": "A sleek and intuitive Chrome extension to manage bookmarks with search, sort, folder management, and export/import features."
     },
     "coming_soon": {
@@ -31,12 +31,17 @@
   "privacy": {
     "back": "Back to Projects",
     "title": "Privacy <span class=\"text-zinc-500\">Policy</span>",
-    "access_title": "Access & Permissions",
+    "permission_title": "Access & Permissions",
+    "bookmarks_title": "Bookmarks",
+    "storage_title": "Local Storage",
     "internal_data": "Local Processing",
     "internal_desc": "All bookmark operations are performed locally in your browser. No personal data is collected.",
     "storage": "Storage",
     "storage_desc": "Used to save user preferences (themes, fonts, etc.) locally.",
     "bookmarks_desc": "Used only to display, organize, search, and edit bookmarks locally.",
+    "usage_title": "Data Usage",
+    "usage_desc": "We do not sell, trade, or transfer your information to outside parties. All data remains within your browser ecosystem.",
+
     "source_title": "Source Code",
     "source_desc": "The extension is open-source. You can review the code and releases on GitHub.",
     "issues_title": "Known Issues",

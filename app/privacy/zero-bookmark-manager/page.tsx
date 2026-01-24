@@ -134,7 +134,7 @@ export default function PrivacyDetail() {
         </main>
 
         <footer className="text-center py-20 border-t-2 border-black dark:border-white opacity-40 text-[10px] font-black uppercase tracking-[0.5em] reveal-on-scroll">
-          &copy; {year} ZERO BOOKMARK MANAGER. {t("privacy.rights")}
+          &copy; {year} PRACY BOOKMARK. {t("privacy.rights")}
         </footer>
       </div>
     </div>
