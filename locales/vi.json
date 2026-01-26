@@ -21,7 +21,7 @@
     "privacy_policy": "Chính Sách Quyền Riêng Tư",
     "bookmark_manager": {
       "name": "Pracy Bookmark",
-      "desc": "Tiện ích Chrome mượt mà và trực quan để quản lý dấu trang với các tính năng tìm kiếm, sắp xếp, quản lý thư mục và xuất/nhập."
+      "desc": "Mục đích duy nhất của tiện ích này là cung cấp cho người dùng một giao diện dễ dàng để quản lý dấu trang (xem, tổ chức, tìm kiếm và chỉnh sửa)."
     },
     "coming_soon": {
       "name": "Sắp Ra Mắt",
@@ -37,10 +37,20 @@
     "internal_data": "Xử Lý Nội Bộ",
     "internal_desc": "Mọi thao tác dấu trang được thực hiện nội bộ trên trình duyệt. Không thu thập dữ liệu cá nhân.",
     "storage": "Lưu Trữ",
-    "storage_desc": "Dùng để lưu các tùy chỉnh người dùng (theme, font...) cục bộ.",
-    "bookmarks_desc": "Chỉ được dùng để hiển thị, tổ chức, tìm kiếm và chỉnh sửa dấu trang cục bộ.",
+    "bookmarks_desc": "Quyền này là bắt buộc để truy cập các dấu trang của người dùng nhằm hiển thị, tổ chức thư mục, tìm kiếm theo tiêu đề hoặc URL, chỉnh sửa chi tiết dấu trang và tự động phát hiện, loại bỏ các dấu trang trùng lặp.",
+    "storage_desc": "Quyền lưu trữ được sử dụng để lưu các tùy chọn của người dùng, chẳng hạn như hành vi mở nhanh ưu tiên (popup, bảng bên hoặc chế độ xem web), để tiện ích có thể ghi nhớ và áp dụng các cài đặt này qua các phiên làm việc.",
+    "sidePanel_title": "Bảng bên",
+    "sidePanel_desc": "Quyền sidePanel là bắt buộc để mở giao diện trình quản lý dấu trang bên trong bảng bên của Chrome, cho phép người dùng xem và quản lý dấu trang của họ mà không cần rời khỏi hoặc gián đoạn trang duyệt web hiện tại.",
+    "tabs_title": "Quản lý Tab",
+    "tabs_desc": "Quyền tabs được sử dụng để phát hiện xem trang trình quản lý dấu trang đã được mở hay chưa, kích hoạt và tập trung vào tab hiện có nếu tìm thấy, hoặc tạo tab mới khi cần thiết để tránh trùng lặp trang và cải thiện trải nghiệm người dùng.",
+    "systemDisplay_title": "Hiển thị hệ thống",
+    "systemDisplay_desc": "Quyền system.display được sử dụng để lấy kích thước màn hình và vùng làm việc nhằm định vị chính xác cửa sổ popup của tiện ích trên màn hình người dùng, đảm bảo rằng popup xuất hiện đầy đủ và dễ truy cập trên các kích thước và độ phân giải màn hình khác nhau.",
     "usage_title": "Sử Dụng Dữ Liệu",
-    "usage_desc": "Chúng tôi không bán, trao đổi hoặc chuyển nhượng thông tin của bạn cho bên thứ ba. Tất cả dữ liệu nằm trong hệ sinh thái trình duyệt của bạn.",
+    "usage_general": "Zero Bookmark Manager không thu thập, bán hoặc chuyển giao dữ liệu người dùng cho bên thứ ba.",
+    "usage_bookmarks": "Dữ liệu dấu trang chỉ được truy cập cho mục đích hiển thị, tổ chức, tìm kiếm, chỉnh sửa và loại bỏ các dấu trang trùng lặp. Tất cả quá trình xử lý liên quan đến dấu trang được thực hiện cục bộ trong trình duyệt của người dùng và không được truyền đến các máy chủ bên ngoài.",
+    "usage_storage": "Tùy chọn người dùng và cài đặt tiện ích được lưu trữ cục bộ bằng API storage của Chrome và nằm lại trên thiết bị của người dùng.",
+    "usage_ai": "Tiện ích bao gồm tính năng chatbot tùy chọn cho phép người dùng kết nối nhà cung cấp AI đã chọn của riêng họ (chẳng hạn như Google Gemini hoặc OpenAI GPT). Chỉ văn bản được người dùng nhập rõ ràng vào chatbot mới được gửi trực tiếp đến API của nhà cung cấp đã chọn để tạo phản hồi. Không có dữ liệu dấu trang, lịch sử duyệt web hoặc thông tin cá nhân nào được tiện ích gửi đến các dịch vụ bên ngoài.",
+    "usage_ai_policy": "Tiện ích không ghi nhật ký, lưu giữ hoặc phân tích các tương tác với chatbot. Mọi dữ liệu được gửi đến các nhà cung cấp AI bên thứ ba đều tuân theo chính sách bảo mật và điều khoản dịch vụ của nhà cung cấp tương ứng.",
 
     "source_title": "Mã Nguồn",
     "source_desc": "Tiện ích này là mã nguồn mở. Bạn có thể xem mã và các bản phát hành trên GitHub.",

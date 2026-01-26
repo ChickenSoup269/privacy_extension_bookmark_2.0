@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Shield, HardDrive, Mail, ChevronLeft, Fingerprint, Github, AlertTriangle, Terminal } from "lucide-react";
+import { Shield, HardDrive, Mail, ChevronLeft, Fingerprint, Github, AlertTriangle, Terminal, PanelRight, Layers, Monitor, Bot } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
 import { useScrollReveal } from "@/components/useScrollReveal";
@@ -64,6 +64,24 @@ export default function PrivacyDetail() {
                     </span>
                     <p className="text-zinc-900 dark:text-zinc-100 font-bold text-xl leading-snug">{t("privacy.storage_desc")}</p>
                   </div>
+                  <div className="group p-10 border-2 border-black dark:border-white hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors relative overflow-hidden">
+                    <span className="font-black block text-xs uppercase mb-4 text-zinc-500 tracking-widest flex items-center gap-2">
+                       <PanelRight className="w-4 h-4" /> {t("privacy.sidePanel_title")}
+                    </span>
+                    <p className="text-zinc-900 dark:text-zinc-100 font-bold text-xl leading-snug">{t("privacy.sidePanel_desc")}</p>
+                  </div>
+                  <div className="group p-10 border-2 border-black dark:border-white hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors relative overflow-hidden">
+                    <span className="font-black block text-xs uppercase mb-4 text-zinc-500 tracking-widest flex items-center gap-2">
+                       <Layers className="w-4 h-4" /> {t("privacy.tabs_title")}
+                    </span>
+                    <p className="text-zinc-900 dark:text-zinc-100 font-bold text-xl leading-snug">{t("privacy.tabs_desc")}</p>
+                  </div>
+                  <div className="group p-10 border-2 border-black dark:border-white hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors relative overflow-hidden md:col-span-2">
+                    <span className="font-black block text-xs uppercase mb-4 text-zinc-500 tracking-widest flex items-center gap-2">
+                       <Monitor className="w-4 h-4" /> {t("privacy.systemDisplay_title")}
+                    </span>
+                    <p className="text-zinc-900 dark:text-zinc-100 font-bold text-xl leading-snug">{t("privacy.systemDisplay_desc")}</p>
+                  </div>
                 </div>
               </div>
 
@@ -75,8 +93,43 @@ export default function PrivacyDetail() {
                   </div>
                   <h2 className="text-3xl font-black uppercase italic tracking-tight">{t("privacy.usage_title")}</h2>
                 </div>
-                <div className="p-10 border-2 border-black dark:border-white bg-zinc-50 dark:bg-zinc-900 italic font-bold text-2xl">
-                   {t("privacy.usage_desc")}
+                
+                <div className="space-y-8">
+                  <div className="p-10 border-2 border-black dark:border-white bg-zinc-50 dark:bg-zinc-900 italic font-bold text-xl md:text-2xl leading-relaxed">
+                     {t("privacy.usage_general")}
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="p-8 border-2 border-black dark:border-white">
+                      <h4 className="font-black uppercase text-xs mb-4 text-zinc-500 tracking-widest flex items-center gap-2">
+                        {t("privacy.internal_data")}
+                      </h4>
+                      <p className="font-bold text-lg leading-relaxed">{t("privacy.usage_bookmarks")}</p>
+                    </div>
+                    <div className="p-8 border-2 border-black dark:border-white">
+                      <h4 className="font-black uppercase text-xs mb-4 text-zinc-500 tracking-widest flex items-center gap-2">
+                        {t("privacy.storage")}
+                      </h4>
+                      <p className="font-bold text-lg leading-relaxed">{t("privacy.usage_storage")}</p>
+                    </div>
+                  </div>
+
+                  <div className="p-10 border-2 border-black dark:border-white bg-black text-white dark:bg-white dark:text-black relative overflow-hidden group">
+                    <Bot className="absolute -bottom-4 -right-4 w-32 h-32 opacity-10 group-hover:opacity-20 transition-opacity" />
+                    <div className="relative z-10">
+                      <h4 className="font-black uppercase text-xs mb-6 text-zinc-400 dark:text-zinc-600 tracking-[0.3em] flex items-center gap-2">
+                        Chatbot & AI Providers
+                      </h4>
+                      <div className="space-y-6">
+                        <p className="font-bold text-lg md:text-xl leading-relaxed">
+                          {t("privacy.usage_ai")}
+                        </p>
+                        <p className="font-bold text-sm opacity-70 border-t border-zinc-800 dark:border-zinc-200 pt-6">
+                          {t("privacy.usage_ai_policy")}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 

@@ -21,7 +21,7 @@
     "privacy_policy": "Privacy Policy",
     "bookmark_manager": {
       "name": "Pracy Bookmark",
-      "desc": "A sleek and intuitive Chrome extension to manage bookmarks with search, sort, folder management, and export/import features."
+      "desc": "The sole purpose of this extension is to provide users with an easy interface to manage bookmarks (view, organize, search, and edit)."
     },
     "coming_soon": {
       "name": "Coming Soon",
@@ -37,10 +37,20 @@
     "internal_data": "Local Processing",
     "internal_desc": "All bookmark operations are performed locally in your browser. No personal data is collected.",
     "storage": "Storage",
-    "storage_desc": "Used to save user preferences (themes, fonts, etc.) locally.",
-    "bookmarks_desc": "Used only to display, organize, search, and edit bookmarks locally.",
+    "bookmarks_desc": "This permission is required to access the user's bookmarks in order to display them, organize folders, search by title or URL, edit bookmark details, and detect and remove duplicate bookmarks automatically.",
+    "storage_desc": "The storage permission is used to save user preferences, such as the preferred quick-open behavior (popup, side panel, or web view), so the extension can remember and apply these settings across sessions.",
+    "sidePanel_title": "Side Panel",
+    "sidePanel_desc": "The sidePanel permission is required to open the bookmark manager interface inside Chrome’s side panel, allowing users to view and manage their bookmarks without leaving or interrupting the current browsing page.",
+    "tabs_title": "Tabs Management",
+    "tabs_desc": "The tabs permission is used to detect whether the bookmark manager page is already open, activate and focus an existing tab if found, or create a new tab when necessary to prevent duplicate pages and improve user experience.",
+    "systemDisplay_title": "System Display",
+    "systemDisplay_desc": "The system.display permission is used to obtain screen and work area dimensions in order to correctly position the extension’s popup window on the user’s screen, ensuring that the popup appears fully visible and accessible across different screen sizes and resolutions.",
     "usage_title": "Data Usage",
-    "usage_desc": "We do not sell, trade, or transfer your information to outside parties. All data remains within your browser ecosystem.",
+    "usage_general": "Zero Bookmark Manager does not collect, sell, or transfer user data to third parties.",
+    "usage_bookmarks": "Bookmark data is accessed only for the purpose of displaying, organizing, searching, editing, and removing duplicate bookmarks. All bookmark-related processing is performed locally within the user’s browser and is not transmitted to external servers.",
+    "usage_storage": "User preferences and extension settings are stored locally using Chrome’s storage API and remain on the user’s device.",
+    "usage_ai": "The extension includes an optional chatbot feature that allows users to connect their own selected AI provider (such as Google Gemini or OpenAI GPT). Only the text explicitly entered by the user into the chatbot is sent directly to the selected provider’s API to generate responses. No bookmark data, browsing history, or personal information is sent to external services by the extension.",
+    "usage_ai_policy": "The extension does not log, retain, or analyze chatbot interactions. Any data sent to third-party AI providers is governed by the respective provider’s privacy policy and terms of service.",
 
     "source_title": "Source Code",
     "source_desc": "The extension is open-source. You can review the code and releases on GitHub.",
