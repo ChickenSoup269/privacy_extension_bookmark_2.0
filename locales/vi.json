@@ -20,7 +20,7 @@
     "subtitle": "Mỗi công cụ là một lời hứa về sự an toàn.",
     "privacy_policy": "Chính Sách Quyền Riêng Tư",
     "bookmark_manager": {
-      "name": "Pracy Bookmark",
+      "name": "Privacy Bookmark",
       "desc": "Mục đích duy nhất của tiện ích này là cung cấp cho người dùng một giao diện dễ dàng để quản lý dấu trang (xem, tổ chức, tìm kiếm và chỉnh sửa)."
     },
     "coming_soon": {
@@ -32,6 +32,8 @@
     "back": "Quay lại dự án",
     "title": "Chính Sách <span class=\"text-zinc-500\">Quyền Riêng Tư</span>",
     "permission_title": "Quyền Truy Cập",
+    "permission_justification_title": "Giải Thích Quyền Truy Cập",
+    "permission_justification_desc": "Quyền webNavigation được yêu cầu để theo dõi các tương tác của người dùng với dấu trang. Quyền này cho phép tiện ích giám sát khi người dùng điều hướng đến các URL đã được đánh dấu, cả bên trong và bên ngoài tiện ích, đảm bảo theo dõi chính xác và quản lý việc sử dụng dấu trang. Quyền này là cần thiết cho chức năng cốt lõi của tiện ích.",
     "bookmarks_title": "Dấu Trang",
     "storage_title": "Lưu Trữ Cục Bộ",
     "internal_data": "Xử Lý Nội Bộ",
@@ -45,11 +47,15 @@
     "tabs_desc": "Quyền tabs được sử dụng để phát hiện xem trang trình quản lý dấu trang đã được mở hay chưa, kích hoạt và tập trung vào tab hiện có nếu tìm thấy, hoặc tạo tab mới khi cần thiết để tránh trùng lặp trang và cải thiện trải nghiệm người dùng.",
     "systemDisplay_title": "Hiển thị hệ thống",
     "systemDisplay_desc": "Quyền system.display được sử dụng để lấy kích thước màn hình và vùng làm việc nhằm định vị chính xác cửa sổ popup của tiện ích trên màn hình người dùng, đảm bảo rằng popup xuất hiện đầy đủ và dễ truy cập trên các kích thước và độ phân giải màn hình khác nhau.",
+    "webNavigation_title": "Điều hướng Web",
+    "webNavigation_desc": "Quyền webNavigation được yêu cầu để theo dõi các tương tác của người dùng với dấu trang. Quyền này cho phép tiện ích giám sát khi người dùng điều hướng đến các URL đã được đánh dấu, cả bên trong và bên ngoài tiện ích, đảm bảo theo dõi chính xác và quản lý việc sử dụng dấu trang. Quyền này là cần thiết cho chức năng cốt lõi của tiện ích.",
+    "chatbot_title": "Chatbot",
+    "chatbot_desc": "Chatbot hiện tại là một hệ thống dựa trên lệnh và không sử dụng AI hoặc gọi API bên thứ ba. Điều này đảm bảo quyền riêng tư hoàn toàn và xử lý cục bộ.",
     "usage_title": "Sử Dụng Dữ Liệu",
     "usage_general": "Zero Bookmark Manager không thu thập, bán hoặc chuyển giao dữ liệu người dùng cho bên thứ ba.",
     "usage_bookmarks": "Dữ liệu dấu trang chỉ được truy cập cho mục đích hiển thị, tổ chức, tìm kiếm, chỉnh sửa và loại bỏ các dấu trang trùng lặp. Tất cả quá trình xử lý liên quan đến dấu trang được thực hiện cục bộ trong trình duyệt của người dùng và không được truyền đến các máy chủ bên ngoài.",
     "usage_storage": "Tùy chọn người dùng và cài đặt tiện ích được lưu trữ cục bộ bằng API storage của Chrome và nằm lại trên thiết bị của người dùng.",
-    "usage_ai": "Tiện ích bao gồm tính năng chatbot tùy chọn cho phép người dùng kết nối nhà cung cấp AI đã chọn của riêng họ (chẳng hạn như Google Gemini hoặc OpenAI GPT). Chỉ văn bản được người dùng nhập rõ ràng vào chatbot mới được gửi trực tiếp đến API của nhà cung cấp đã chọn để tạo phản hồi. Không có dữ liệu dấu trang, lịch sử duyệt web hoặc thông tin cá nhân nào được tiện ích gửi đến các dịch vụ bên ngoài.",
+    "usage_ai": "Chatbot hiện tại là một hệ thống dựa trên lệnh và không sử dụng AI hoặc gọi API bên thứ ba. Điều này đảm bảo quyền riêng tư hoàn toàn và xử lý cục bộ.",
     "usage_ai_policy": "Tiện ích không ghi nhật ký, lưu giữ hoặc phân tích các tương tác với chatbot. Mọi dữ liệu được gửi đến các nhà cung cấp AI bên thứ ba đều tuân theo chính sách bảo mật và điều khoản dịch vụ của nhà cung cấp tương ứng.",
 
     "source_title": "Mã Nguồn",

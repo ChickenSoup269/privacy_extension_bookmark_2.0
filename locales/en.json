@@ -20,7 +20,7 @@
     "subtitle": "Every tool is a promise of safety.",
     "privacy_policy": "Privacy Policy",
     "bookmark_manager": {
-      "name": "Pracy Bookmark",
+      "name": "Privacy Bookmark",
       "desc": "The sole purpose of this extension is to provide users with an easy interface to manage bookmarks (view, organize, search, and edit)."
     },
     "coming_soon": {
@@ -45,6 +45,10 @@
     "tabs_desc": "The tabs permission is used to detect whether the bookmark manager page is already open, activate and focus an existing tab if found, or create a new tab when necessary to prevent duplicate pages and improve user experience.",
     "systemDisplay_title": "System Display",
     "systemDisplay_desc": "The system.display permission is used to obtain screen and work area dimensions in order to correctly position the extension’s popup window on the user’s screen, ensuring that the popup appears fully visible and accessible across different screen sizes and resolutions.",
+    "webNavigation_title": "Web Navigation",
+    "webNavigation_desc": "The webNavigation permission is required to track user interactions with bookmarks. It allows the extension to monitor when users navigate to bookmarked URLs, both inside and outside the extension, ensuring accurate tracking and management of bookmark usage. This permission is essential for the core functionality of the extension.",
+    "chatbot_title": "Chatbot",
+    "chatbot_desc": "The chatbot is now a command-based system and does not utilize AI or third-party APIs. This ensures complete privacy and local processing.",
     "usage_title": "Data Usage",
     "usage_general": "Zero Bookmark Manager does not collect, sell, or transfer user data to third parties.",
     "usage_bookmarks": "Bookmark data is accessed only for the purpose of displaying, organizing, searching, editing, and removing duplicate bookmarks. All bookmark-related processing is performed locally within the user’s browser and is not transmitted to external servers.",
