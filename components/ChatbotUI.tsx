@@ -28,16 +28,21 @@ export function ChatbotUI() {
 
     setTimeout(() => {
       let botResponse = ""
-      if (option.action === "zero") {
+      if (option.action === "bookmark") {
         botResponse =
           language === "vi"
-            ? "Privacy Bookmark là dự án trọng tâm của chúng tôi, cam kết 100% không thu thập dữ liệu và xử lý cục bộ."
-            : "Privacy Bookmark is our flagship project, committing 100% to zero data collection and local processing."
+            ? "Privacy Bookmark giúp bạn quản lý dấu trang và xử lý dữ liệu hoàn toàn cục bộ trong trình duyệt. Dự án không thu thập hay chia sẻ dữ liệu cá nhân."
+            : "Privacy Bookmark helps you manage bookmarks with fully local browser-side processing. The project does not collect or share personal data."
+      } else if (option.action === "startpage") {
+        botResponse =
+          language === "vi"
+            ? "Zero Startpage thay tab mới của Chrome bằng dashboard cá nhân hóa. Mục đích duy nhất là tối ưu trải nghiệm tab mới và các quyền chỉ dùng cho tính năng đã công bố."
+            : "Zero Startpage replaces Chrome's new tab with a personalized dashboard. Its single purpose is a productivity-focused new tab experience, and permissions are limited to declared features."
       } else if (option.action === "all") {
         botResponse =
           language === "vi"
-            ? "Hiện tại chúng tôi có Privacy Bookmark và các dự án khác đang phát triển. Tất cả đều tuân thủ triết lý bảo mật nghiêm ngặt."
-            : "Currently we have Privacy Bookmark and other projects in development. All follow strict privacy philosophies."
+            ? "Hiện tại có 2 dự án chính: Privacy Bookmark và Zero Startpage - Newtab Replacement. Cả hai đều ưu tiên xử lý cục bộ, minh bạch quyền truy cập và không bán dữ liệu người dùng."
+            : "We currently have 2 primary projects: Privacy Bookmark and Zero Startpage - Newtab Replacement. Both prioritize local processing, transparent permissions, and no user-data selling."
       }
       setMessages((prev) => [...prev, { role: "bot", text: botResponse }])
     }, 600)
@@ -53,8 +58,32 @@ export function ChatbotUI() {
     setTimeout(() => {
       let botResponse = ""
       const lower = userMessage.toLowerCase()
+      const asksBookmark =
+        lower.includes("bookmark") ||
+        lower.includes("dấu trang") ||
+        lower.includes("privacy bookmark")
+      const asksStartpage =
+        lower.includes("startpage") ||
+        lower.includes("newtab") ||
+        lower.includes("new tab") ||
+        lower.includes("tab mới")
+      const asksAll =
+        lower.includes("all") ||
+        lower.includes("tất cả") ||
+        lower.includes("hai dự án") ||
+        lower.includes("2 dự án")
 
-      if (lower.includes("privacy") || lower.includes("bookmark")) {
+      if (asksAll) {
+        botResponse =
+          language === "vi"
+            ? "Hai dự án hiện tại là Privacy Bookmark và Zero Startpage. Privacy Bookmark tập trung quản lý dấu trang cục bộ, còn Zero Startpage tập trung trải nghiệm tab mới cá nhân hóa với quyền truy cập theo từng tính năng."
+            : "The two current projects are Privacy Bookmark and Zero Startpage. Privacy Bookmark focuses on local bookmark management, while Zero Startpage focuses on a personalized new-tab experience with feature-scoped permissions."
+      } else if (asksStartpage) {
+        botResponse =
+          language === "vi"
+            ? "Zero Startpage - Newtab Replacement thay tab mới của Chrome bằng dashboard tùy chỉnh. Quyền bookmarks/scripting/tabs/host chỉ phục vụ các chức năng đã nêu trong chính sách và không dùng để quảng cáo hay bán dữ liệu."
+            : "Zero Startpage - Newtab Replacement replaces Chrome's new tab with a customizable dashboard. Its bookmarks/scripting/tabs/host permissions are used only for declared features and not for advertising or data selling."
+      } else if (asksBookmark) {
         botResponse =
           language === "vi"
             ? "Privacy Bookmark xử lý mọi dữ liệu cục bộ trên trình duyệt của bạn. Chúng tôi không bao giờ thu thập hay chia sẻ dữ liệu dấu trang của bạn và không gọi API bên ngoài."
@@ -62,13 +91,13 @@ export function ChatbotUI() {
       } else if (lower.includes("privacy") || lower.includes("bảo mật")) {
         botResponse =
           language === "vi"
-            ? "Tại Privacy Center, chúng tôi cam kết bảo mật tuyệt đối. Bạn muốn biết thêm về chính sách của Privacy Bookmark không?"
-            : "At Privacy Center, we are committed to absolute security. Would you like to know more about Privacy Bookmark's policy?"
+            ? "Tại Privacy Center, chúng tôi cam kết bảo mật và minh bạch. Bạn muốn xem chính sách của Privacy Bookmark hay Zero Startpage?"
+            : "At Privacy Center, we are committed to security and transparency. Would you like the policy of Privacy Bookmark or Zero Startpage?"
       } else {
         botResponse =
           language === "vi"
-            ? "Xin lỗi, tôi chỉ có thể cung cấp thông tin về quyền riêng tư của các dự án trong hệ sinh thái này. Hãy thử chọn một dự án bên dưới!"
-            : "Sorry, I can only provide privacy information about projects in this ecosystem. Try selecting a project below!"
+            ? "Mình có thể cung cấp thông tin quyền riêng tư cho 2 dự án: Privacy Bookmark và Zero Startpage. Bạn muốn xem dự án nào?"
+            : "I can provide privacy information for 2 projects: Privacy Bookmark and Zero Startpage. Which one would you like?"
       }
 
       setMessages((prev) => [...prev, { role: "bot", text: botResponse }])
@@ -88,7 +117,14 @@ export function ChatbotUI() {
             {
               label:
                 language === "vi" ? "Privacy Bookmark" : "Privacy Bookmark",
-              action: "zero",
+              action: "bookmark",
+            },
+            {
+              label:
+                language === "vi"
+                  ? "Zero Startpage - Newtab Replacement"
+                  : "Zero Startpage - Newtab Replacement",
+              action: "startpage",
             },
             {
               label: language === "vi" ? "Tất cả dự án" : "All Projects",

@@ -17,6 +17,12 @@ export default function ProjectsPage() {
       privacyUrl: "/privacy/zero-bookmark-manager",
     },
     {
+      id: "zero-startpage-newtab-replacement",
+      name: t("projects.startpage.name"),
+      description: t("projects.startpage.desc"),
+      privacyUrl: "/privacy/zero-startpage-newtab-replacement",
+    },
+    {
       id: "coming-soon",
       name: t("projects.coming_soon.name"),
       description: t("projects.coming_soon.desc"),

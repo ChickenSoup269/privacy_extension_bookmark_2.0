@@ -23,6 +23,10 @@
       "name": "Privacy Bookmark",
       "desc": "The sole purpose of this extension is to provide users with an easy interface to manage bookmarks (view, organize, search, and edit)."
     },
+    "startpage": {
+      "name": "Zero Startpage - Newtab Replacement",
+      "desc": "Replaces Chrome new tab with a customizable productivity dashboard while keeping user data local-first."
+    },
     "coming_soon": {
       "name": "Coming Soon",
       "desc": "New projects are being developed with the same privacy-first philosophy."
@@ -72,5 +76,34 @@
     "item4": "Custom Fonts & Nerd Fonts",
     "item5": "QR Code Generator & Beta Chatbot",
     "item6": "Advanced Tagging & Pinning"
+  },
+  "startpage_privacy": {
+    "back": "Back to Projects",
+    "eyebrow": "Chrome Web Store Compliance",
+    "title": "Zero Startpage - Newtab Replacement",
+    "subtitle": "Privacy",
+    "intro": "To facilitate compliance with Chrome Web Store Developer Program Policies, the following declarations describe the extension's single purpose and permission usage.",
+    "single_purpose_title": "Single Purpose Description",
+    "single_purpose_desc": "Startpage replaces Chrome's new tab page with a customizable personal dashboard. It provides local bookmark management, clock/calendar widgets, search shortcuts, optional background and visual effects, and optional media controls/visualization for active audio tabs. Its single purpose is to give users a personalized and productivity-focused new tab experience.",
+    "permission_title": "Permission Justification",
+    "bookmarks_title": "bookmarks justification",
+    "bookmarks_desc": "The bookmarks permission is used only when the user chooses to import bookmarks into Startpage. The extension reads the bookmark tree via Chrome Bookmarks API so users can select and import items into their local Startpage view. No bookmark data is sold, shared for unrelated purposes, or sent to our own servers.",
+    "scripting_title": "scripting justification",
+    "scripting_desc": "The scripting permission is used to execute short in-page scripts in the currently detected media tab to read playback metadata (title, artist, duration, paused state) and to perform user-requested media controls (play/pause/next/previous/seek). It is also used for optional audio visualizer synchronization. Scripts are packaged with the extension and are not remotely loaded.",
+    "tabs_title": "tabs justification",
+    "tabs_desc": "The tabs permission is used to locate audible/media tabs and read tab URL/title context needed to identify supported media pages (for example YouTube/Spotify) and show current playback information in the Startpage widget. It is not used for advertising, profiling, or sale of browsing data.",
+    "host_title": "Host permission justification",
+    "host_intro": "Host permissions are required for three extension features:",
+    "host_item1": "Requesting search suggestions from suggestqueries.google.com when the user types in the search box.",
+    "host_item2": "Reading media state and controlling playback on supported media sites (such as YouTube and Spotify) via injected scripts.",
+    "host_item3": "Supporting optional media detection broadly across pages due to the extension's cross-site media widget behavior.",
+    "host_outro": "All access is feature-scoped and initiated by extension functionality; no remote code execution is used.",
+    "source_title": "Source Code",
+    "source_desc": "The extension source is public for transparency. You can review implementation details and release history on GitHub.",
+    "source_link_label": "View Repository",
+    "contact_title": "Contact Email",
+    "contact_desc": "For compliance or privacy questions, contact:",
+    "contact_email": "thientran01345@icloud.com",
+    "footer": "Accurate and transparent declarations help reduce review time and rejection risk."
   }
 }

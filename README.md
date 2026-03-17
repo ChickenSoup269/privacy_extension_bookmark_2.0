@@ -55,12 +55,6 @@ Our core philosophy is straightforward: Privacy is a Right.
 | Team  | Zero Team                 |
 | Email | thientran01345@icloud.com |
 
-## Permissions
-
-### webNavigation
-
-The webNavigation permission is required to track user interactions with bookmarks. It allows the extension to monitor when users navigate to bookmarked URLs, both inside and outside the extension, ensuring accurate tracking and management of bookmark usage. This permission is essential for the core functionality of the extension.
-
 ---
 
 Copyright 2026 Privacy Center. All Rights Reserved.

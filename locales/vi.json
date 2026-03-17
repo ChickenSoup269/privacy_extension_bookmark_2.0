@@ -23,6 +23,10 @@
       "name": "Privacy Bookmark",
       "desc": "Mục đích duy nhất của tiện ích này là cung cấp cho người dùng một giao diện dễ dàng để quản lý dấu trang (xem, tổ chức, tìm kiếm và chỉnh sửa)."
     },
+    "startpage": {
+      "name": "Zero Startpage - Newtab Replacement",
+      "desc": "Thay tab mới của Chrome bằng dashboard năng suất có thể tùy chỉnh, ưu tiên xử lý dữ liệu cục bộ."
+    },
     "coming_soon": {
       "name": "Sắp Ra Mắt",
       "desc": "Các dự án mới đang được phát triển với cùng triết lý bảo mật hàng đầu."
@@ -74,5 +78,34 @@
     "item4": "Tùy chỉnh Font & Nerd Fonts",
     "item5": "Tạo mã QR & Chatbot (Beta)",
     "item6": "Gắn thẻ nâng cao & Ghim dấu trang"
+  },
+  "startpage_privacy": {
+    "back": "Quay lại dự án",
+    "eyebrow": "Tuân Thủ Chrome Web Store",
+    "title": "Zero Startpage - Newtab Replacement",
+    "subtitle": "Quyền Riêng Tư",
+    "intro": "Để hỗ trợ tuân thủ Chính sách Chương trình dành cho Nhà phát triển của Chrome Web Store, các khai báo dưới đây mô tả mục đích duy nhất và cách sử dụng quyền truy cập của tiện ích.",
+    "single_purpose_title": "Mô Tả Mục Đích Duy Nhất",
+    "single_purpose_desc": "Startpage thay thế trang tab mới của Chrome bằng một bảng điều khiển cá nhân có thể tuỳ chỉnh. Tiện ích cung cấp quản lý dấu trang cục bộ, widget đồng hồ/lịch, phím tắt tìm kiếm, nền và hiệu ứng hình ảnh tuỳ chọn, cùng các điều khiển/trình trực quan hoá media tuỳ chọn cho tab đang phát âm thanh. Mục đích duy nhất của tiện ích là mang lại trải nghiệm tab mới được cá nhân hoá và tập trung vào năng suất.",
+    "permission_title": "Giải Thích Quyền Truy Cập",
+    "bookmarks_title": "Giải thích quyền bookmarks",
+    "bookmarks_desc": "Quyền bookmarks chỉ được sử dụng khi người dùng chọn nhập dấu trang vào Startpage. Tiện ích đọc cây dấu trang thông qua Chrome Bookmarks API để người dùng chọn và nhập mục vào giao diện Startpage cục bộ của họ. Dữ liệu dấu trang không bị bán, không chia sẻ cho mục đích không liên quan và không gửi về máy chủ của chúng tôi.",
+    "scripting_title": "Giải thích quyền scripting",
+    "scripting_desc": "Quyền scripting được dùng để chạy các script ngắn ngay trên trang trong tab media đang được phát hiện nhằm đọc metadata phát lại (tiêu đề, nghệ sĩ, thời lượng, trạng thái tạm dừng) và thực hiện các điều khiển media do người dùng yêu cầu (phát/tạm dừng/tiếp theo/trước đó/tua). Quyền này cũng được dùng cho đồng bộ audio visualizer tùy chọn. Script được đóng gói sẵn trong tiện ích và không tải từ xa.",
+    "tabs_title": "Giải thích quyền tabs",
+    "tabs_desc": "Quyền tabs được dùng để tìm các tab có âm thanh/media và đọc ngữ cảnh URL/tiêu đề tab cần thiết nhằm nhận diện các trang media được hỗ trợ (ví dụ YouTube/Spotify), đồng thời hiển thị thông tin phát hiện tại trong widget Startpage. Quyền này không được dùng cho quảng cáo, lập hồ sơ người dùng hoặc bán dữ liệu duyệt web.",
+    "host_title": "Giải thích host permissions",
+    "host_intro": "Host permissions là cần thiết cho 3 tính năng của tiện ích:",
+    "host_item1": "Gửi yêu cầu gợi ý tìm kiếm từ suggestqueries.google.com khi người dùng nhập vào ô tìm kiếm.",
+    "host_item2": "Đọc trạng thái media và điều khiển phát lại trên các trang media được hỗ trợ (như YouTube và Spotify) thông qua script được chèn.",
+    "host_item3": "Hỗ trợ phát hiện media tùy chọn trên nhiều trang do cơ chế widget media hoạt động xuyên website của tiện ích.",
+    "host_outro": "Mọi truy cập đều được giới hạn theo từng tính năng và được kích hoạt bởi chức năng của tiện ích; không sử dụng thực thi mã từ xa.",
+    "source_title": "Mã Nguồn",
+    "source_desc": "Mã nguồn tiện ích được công khai để minh bạch. Bạn có thể xem chi tiết triển khai và lịch sử phát hành trên GitHub.",
+    "source_link_label": "Xem Repository",
+    "contact_title": "Email Liên Hệ",
+    "contact_desc": "Nếu có câu hỏi về tuân thủ hoặc quyền riêng tư, vui lòng liên hệ:",
+    "contact_email": "thientran01345@icloud.com",
+    "footer": "Khai báo chính xác và minh bạch sẽ giúp rút ngắn thời gian duyệt và giảm nguy cơ bị từ chối."
   }
 }
