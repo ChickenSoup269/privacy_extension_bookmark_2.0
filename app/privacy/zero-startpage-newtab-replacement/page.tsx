@@ -8,6 +8,7 @@ import {
   Bookmark,
   Code2,
   MonitorPlay,
+  Database,
   Globe,
   CheckCircle2,
   Github,
@@ -94,13 +95,23 @@ export default function ZeroStartpagePrivacyPage() {
                   </p>
                 </article>
 
-                <article className="border-2 border-black dark:border-white p-6 md:col-span-2">
+                <article className="border-2 border-black dark:border-white p-6">
                   <h3 className="font-black uppercase text-sm mb-3 tracking-wide flex items-center gap-2">
                     <MonitorPlay className="w-4 h-4" />
                     {t("startpage_privacy.tabs_title")}
                   </h3>
                   <p className="font-bold leading-relaxed">
                     {t("startpage_privacy.tabs_desc")}
+                  </p>
+                </article>
+
+                <article className="border-2 border-black dark:border-white p-6">
+                  <h3 className="font-black uppercase text-sm mb-3 tracking-wide flex items-center gap-2">
+                    <Database className="w-4 h-4" />
+                    {t("startpage_privacy.storage_title")}
+                  </h3>
+                  <p className="font-bold leading-relaxed">
+                    {t("startpage_privacy.storage_desc")}
                   </p>
                 </article>
               </div>

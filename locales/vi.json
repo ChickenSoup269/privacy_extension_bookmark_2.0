@@ -94,6 +94,8 @@
     "scripting_desc": "Quyền scripting được dùng để chạy các script ngắn ngay trên trang trong tab media đang được phát hiện nhằm đọc metadata phát lại (tiêu đề, nghệ sĩ, thời lượng, trạng thái tạm dừng) và thực hiện các điều khiển media do người dùng yêu cầu (phát/tạm dừng/tiếp theo/trước đó/tua). Quyền này cũng được dùng cho đồng bộ audio visualizer tùy chọn. Script được đóng gói sẵn trong tiện ích và không tải từ xa.",
     "tabs_title": "Giải thích quyền tabs",
     "tabs_desc": "Quyền tabs được dùng để tìm các tab có âm thanh/media và đọc ngữ cảnh URL/tiêu đề tab cần thiết nhằm nhận diện các trang media được hỗ trợ (ví dụ YouTube/Spotify), đồng thời hiển thị thông tin phát hiện tại trong widget Startpage. Quyền này không được dùng cho quảng cáo, lập hồ sơ người dùng hoặc bán dữ liệu duyệt web.",
+    "storage_title": "Giải thích quyền storage",
+    "storage_desc": "Quyền storage là cần thiết để đồng bộ hóa các cài đặt của người dùng (chủ đề, bố cục và tùy chỉnh) trên các thiết bị khác nhau thông qua chrome.storage.sync. Ngoài ra, nó còn giúp theo dõi các bản cập nhật phiên bản của tiện ích bằng chrome.storage.local để đảm bảo quá trình cập nhật diễn ra suôn sẻ và lưu trữ bền vững các nội dung người dùng tạo ra như danh sách công việc và ghi chú.",
     "host_title": "Giải thích host permissions",
     "host_intro": "Host permissions là cần thiết cho 3 tính năng của tiện ích:",
     "host_item1": "Gửi yêu cầu gợi ý tìm kiếm từ suggestqueries.google.com khi người dùng nhập vào ô tìm kiếm.",

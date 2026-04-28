@@ -92,6 +92,8 @@
     "scripting_desc": "The scripting permission is used to execute short in-page scripts in the currently detected media tab to read playback metadata (title, artist, duration, paused state) and to perform user-requested media controls (play/pause/next/previous/seek). It is also used for optional audio visualizer synchronization. Scripts are packaged with the extension and are not remotely loaded.",
     "tabs_title": "tabs justification",
     "tabs_desc": "The tabs permission is used to locate audible/media tabs and read tab URL/title context needed to identify supported media pages (for example YouTube/Spotify) and show current playback information in the Startpage widget. It is not used for advertising, profiling, or sale of browsing data.",
+    "storage_title": "storage justification",
+    "storage_desc": "The storage permission is required to synchronize user settings (theme, layouts, and preferences) across different devices via chrome.storage.sync. It also tracks extension version updates using chrome.storage.local to ensure a smooth transition during updates and persists user-generated content like todo lists and notes.",
     "host_title": "Host permission justification",
     "host_intro": "Host permissions are required for three extension features:",
     "host_item1": "Requesting search suggestions from suggestqueries.google.com when the user types in the search box.",
