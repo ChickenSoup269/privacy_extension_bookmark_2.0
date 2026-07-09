@@ -32,6 +32,14 @@ export function Navbar() {
             <Link href="/projects" className="nav-link">
               {t("nav.projects")}
             </Link>
+            <a 
+              href="https://extension-changelogs.vercel.app/changelog" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="nav-link"
+            >
+              Changelog
+            </a>
           </div>
 
           <div className="flex items-center gap-6">
