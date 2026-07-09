@@ -39,7 +39,7 @@ export default function RootLayout({
           defaultTheme="yellow"
           enableSystem
           disableTransitionOnChange
-          themes={["light", "dark", "yellow"]}
+          themes={["light", "dark", "yellow", "green"]}
         >
           <FontProvider fontStyles={{ retro: gohu.style.fontFamily, sans: inter.style.fontFamily }}>
             <LanguageProvider>

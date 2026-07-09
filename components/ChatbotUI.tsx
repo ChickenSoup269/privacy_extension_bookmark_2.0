@@ -193,7 +193,7 @@ export function ChatbotUI() {
                       <button
                         key={j}
                         onClick={() => handleOptionClick(opt)}
-                        className="flex items-center justify-between p-2.5 border-2 border-black bg-yellow-300 text-black font-black uppercase text-[10px] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all text-left"
+                        className="flex items-center justify-between p-2.5 border-2 border-black dark:border-white bg-white dark:bg-black text-black dark:text-white yellow:bg-yellow-300 yellow:text-black green:bg-green-300 green:text-black font-black uppercase text-[10px] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] yellow:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] green:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all text-left"
                       >
                         {opt.label}
                         <ChevronRight className="w-3 h-3" />

@@ -36,6 +36,18 @@
     @apply border-black/20;
   }
 
+  .green {
+    --background: 134 239 172; /* Green-300 */
+    --foreground: 5 46 22;    /* Green-950 */
+    --primary: 0 0 0;
+    --secondary: 187 247 208; /* Green-200 */
+    --accent: 21 128 61;      /* Green-700 */
+  }
+
+  .green * {
+    @apply border-black/20;
+  }
+
   body {
     @apply bg-white dark:bg-zinc-950 text-zinc-950 dark:text-zinc-50 transition-colors duration-500 antialiased;
     font-family: var(--font-family);
@@ -46,6 +58,11 @@
 
   .yellow body {
     @apply bg-yellow-300 text-stone-950;
+    background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.1) 1px, transparent 0);
+  }
+
+  .green body {
+    @apply bg-green-300 text-green-950;
     background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.1) 1px, transparent 0);
   }
 
@@ -92,6 +109,22 @@
 
   .yellow .bg-black a {
     @apply text-yellow-300 border-yellow-300;
+  }
+
+  .green .premium-card {
+    @apply bg-green-50 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)];
+  }
+
+  .green .glass-header {
+    @apply bg-green-300/80 border-black;
+  }
+
+  .green .bg-black {
+    @apply bg-zinc-950 text-green-300;
+  }
+
+  .green .bg-black a {
+    @apply text-green-300 border-green-300;
   }
 
   .nav-link {

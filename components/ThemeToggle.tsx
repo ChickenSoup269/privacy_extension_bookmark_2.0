@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Moon, Sun, Palette } from "lucide-react";
+import { Moon, Sun, Palette, Leaf } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export function ThemeToggle() {
@@ -20,6 +20,7 @@ export function ThemeToggle() {
     { name: "light", icon: <Sun className="h-5 w-5" /> },
     { name: "dark", icon: <Moon className="h-5 w-5" /> },
     { name: "yellow", icon: <Palette className="h-5 w-5" /> },
+    { name: "green", icon: <Leaf className="h-5 w-5" /> },
   ];
 
   const cycleTheme = () => {
@@ -33,7 +34,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={cycleTheme}
-      className="p-2.5 border-2 border-black dark:border-white bg-white dark:bg-black yellow:bg-yellow-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black yellow:hover:bg-black yellow:hover:text-white transition-all active:translate-y-0.5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] yellow:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none"
+      className="p-2.5 border-2 border-black dark:border-white bg-white dark:bg-black yellow:bg-yellow-300 green:bg-green-300 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black yellow:hover:bg-black yellow:hover:text-white green:hover:bg-black green:hover:text-white transition-all active:translate-y-0.5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] yellow:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] green:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none"
       aria-label="Toggle theme"
     >
       {currentTheme.icon}

@@ -11,7 +11,10 @@ export function BackgroundEffects() {
       <div className="absolute top-3/4 left-2/3 w-[500px] h-[500px] border-2 border-black/5 dark:border-white/5 skew-x-12 animate-drift-reverse"></div>
       
       {/* Gradient Wash for Yellow Theme */}
-      <div className="yellow:absolute yellow:inset-0 yellow:bg-gradient-to-tr yellow:from-yellow-400/20 yellow:to-transparent"></div>
+      <div className="hidden yellow:block absolute inset-0 bg-gradient-to-tr from-yellow-400/20 to-transparent"></div>
+      
+      {/* Gradient Wash for Green Theme */}
+      <div className="hidden green:block absolute inset-0 bg-gradient-to-tr from-green-400/20 to-transparent"></div>
     </div>
   );
 }

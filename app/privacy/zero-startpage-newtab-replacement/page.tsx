@@ -13,6 +13,7 @@ import {
   CheckCircle2,
   Github,
   Mail,
+  Fingerprint,
 } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/components/LanguageProvider"
@@ -114,6 +115,16 @@ export default function ZeroStartpagePrivacyPage() {
                     {t("startpage_privacy.storage_desc")}
                   </p>
                 </article>
+
+                <article className="border-2 border-black dark:border-white p-6">
+                  <h3 className="font-black uppercase text-sm mb-3 tracking-wide flex items-center gap-2">
+                    <Fingerprint className="w-4 h-4" />
+                    {t("startpage_privacy.identity_title")}
+                  </h3>
+                  <p className="font-bold leading-relaxed">
+                    {t("startpage_privacy.identity_desc")}
+                  </p>
+                </article>
               </div>
 
               <article className="border-2 border-black dark:border-white p-6 bg-zinc-100 dark:bg-zinc-900">
@@ -143,7 +154,17 @@ export default function ZeroStartpagePrivacyPage() {
                 </p>
               </article>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <article className="border-2 border-black dark:border-white p-6 bg-zinc-100 dark:bg-zinc-900 mt-6">
+                <h3 className="font-black uppercase text-sm mb-3 tracking-wide flex items-center gap-2">
+                  <Database className="w-4 h-4" />
+                  {t("startpage_privacy.google_api_title")}
+                </h3>
+                <p className="font-bold leading-relaxed">
+                  {t("startpage_privacy.google_api_desc")}
+                </p>
+              </article>
+
+              <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <article className="border-2 border-black dark:border-white p-6">
                   <h3 className="font-black uppercase text-sm mb-3 tracking-wide flex items-center gap-2">
                     <Github className="w-4 h-4" />

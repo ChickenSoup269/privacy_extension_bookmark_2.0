@@ -14,5 +14,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addVariant }) {
+      addVariant('yellow', '.yellow &')
+      addVariant('green', '.green &')
+    }
+  ],
 }
