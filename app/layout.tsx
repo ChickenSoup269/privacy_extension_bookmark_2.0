@@ -23,6 +23,9 @@ const gohu = localFont({
 export const metadata: Metadata = {
   title: "Privacy Center",
   description: "Privacy Policies for our project ecosystem",
+  verification: {
+    google: "6hjg9nrYEW8TanxFpGTFrQmco_-AR3AXBNCMWPxXMcY",
+  },
 };
 
 export default function RootLayout({
