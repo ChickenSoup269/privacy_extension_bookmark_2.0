@@ -47,6 +47,8 @@
     "sidePanel_desc": "The sidePanel permission is required to open the bookmark manager interface inside Chrome’s side panel, allowing users to view and manage their bookmarks without leaving or interrupting the current browsing page.",
     "tabs_title": "Tabs Management",
     "tabs_desc": "The tabs permission is used to detect whether the bookmark manager page is already open, activate and focus an existing tab if found, or create a new tab when necessary to prevent duplicate pages and improve user experience.",
+    "identity_title": "Identity",
+    "identity_desc": "The identity permission is required to authenticate users securely with their Google Account using OAuth2. It is exclusively used to obtain an access token to interact with the Google Drive API for backing up and syncing user settings. We do not use this permission to collect personal information, track users, or share identity data with third parties.",
     "systemDisplay_title": "System Display",
     "systemDisplay_desc": "The system.display permission is used to obtain screen and work area dimensions in order to correctly position the extension’s popup window on the user’s screen, ensuring that the popup appears fully visible and accessible across different screen sizes and resolutions.",
     "webNavigation_title": "Web Navigation",

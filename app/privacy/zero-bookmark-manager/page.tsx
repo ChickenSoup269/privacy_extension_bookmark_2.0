@@ -104,6 +104,15 @@ export default function PrivacyDetail() {
                   </div>
                   <div className="group p-10 border-2 border-black dark:border-white hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors relative overflow-hidden md:col-span-2">
                     <span className="font-black block text-xs uppercase mb-4 text-zinc-500 tracking-widest flex items-center gap-2">
+                      <Fingerprint className="w-4 h-4" />{" "}
+                      {t("privacy.identity_title")}
+                    </span>
+                    <p className="text-zinc-900 dark:text-zinc-100 font-bold text-xl leading-snug">
+                      {t("privacy.identity_desc")}
+                    </p>
+                  </div>
+                  <div className="group p-10 border-2 border-black dark:border-white hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors relative overflow-hidden md:col-span-2">
+                    <span className="font-black block text-xs uppercase mb-4 text-zinc-500 tracking-widest flex items-center gap-2">
                       <Monitor className="w-4 h-4" />{" "}
                       {t("privacy.systemDisplay_title")}
                     </span>
